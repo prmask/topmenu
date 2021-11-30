@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+$Poppins: 'Poppins', sans-serif;
+
+// colors
+$dark: rgb(29, 29, 29);
+$light: #fff;
+$primary: #1795d8;
+$bg: rgb(250, 246, 10);
+
+// Body Text colors
+$headTxt: #2b3a47;
+$subTxt: #52606d;
+$fadedTxt: #8f8f8f;
+
+// Spacing
+$spacingMd: 16px;
+$spacingLg: 32px;
+
+// border radius
+$borderRadius: 12px;
+
+// header height
+$headerHeight: 75px;
+
+// For mobile devices
+@mixin for-phone-only {
+	@media (max-width: 480px) {
+		@content;
+	}
+}
+
+// For low resolution tablets, ipads
+@mixin for-tablet {
+	@media (min-width: 481px) and (max-width: 767px) {
+		@content;
+	}
+}
+
+// For tablets, ipads portrait mode
+@mixin for-tablet-potrait-mode {
+	@media (min-width: 768px) and (max-width: 1024px) {
+		@content;
+	}
+}
+
+// For laptops, desktops
+@mixin for-laptop {
+	@media (min-width: 1025px) and (max-width: 1366px) {
+		@content;
+	}
+}
+
+// For large screens
+@mixin for-big-desktop {
+	@media (min-width: 1367px) {
+		@content;
+	}
+}
+
+@mixin breakpoint {
+	@media (min-width: 768px) {
+		@content;
+	}
+}

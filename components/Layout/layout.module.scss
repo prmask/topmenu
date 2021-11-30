@@ -1,0 +1,14 @@
+@import '../../styles/variables.scss';
+
+.container {
+	height: calc(100vh - #{$headerHeight}vh);
+	background: lightblue;
+	display: flex;
+	flex-direction: column;
+
+	h1 {
+		padding: 1.5rem 2.5rem;
+		background: $primary;
+		border-radius: $borderRadius calc(#{$borderRadius} * 10);
+	}
+}

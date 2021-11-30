@@ -1,0 +1,16 @@
+@import '../../../styles/variables.scss';
+
+.footer {
+	padding: 0 2rem;
+	height: calc(100vh - #{$headerHeight});
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: linear-gradient(red, green, yellow);
+	h1 {
+		padding: 1.5rem 2.5rem;
+		background: linear-gradient(yellow, gold, orange, pink, lightblue);
+		color: yellow;
+		border-radius: $borderRadius calc(#{$borderRadius} * 10);
+	}
+}
